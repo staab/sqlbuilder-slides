@@ -15,19 +15,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+		<style type="text/css">
+			pre, code {
+				max-height: 400px !important;
+				font-size: 13px !important;
+				line-height: 15px !important;
+			}
+		</style>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -40,340 +39,413 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
 
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
 
-						```
-						<section data-markdown>
-						  ## Markdown support
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
 
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+<!-- PRESENTATION -->
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
+<section>
+    \Analyst\StringBuilder
+</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
+<section>
+    <section>
+        What Database Abstractions Buy Us
+        <aside class="notes">
+            Database Management and Query Creation
+        </aside>
+    </section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
+    <section>
+        Database Management
+        <br/>
+        <br/>
+        <ul>
+            <li>Pooling/sharing/closing connections</li>
+            <li>Automatic database selection</li>
+            <li>Avoid vendor lock-in by creating a backend-agnostic abstraction</li>
+            <li>Migrations - backward and forward</li>
+        </ul>
+        <aside class="notes">
+            I don't even know how to safely manage connections,
+            since django took care of that for me.
+        </aside>
+    </section>
 
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
+    <section>
+        Query Creation
+        <br/>
+        <br/>
+        <ul>
+            <li>Automatic cleansing</li>
+            <li>Automatic handling of various data types</li>
+            <li>Relation abstraction, including hiding hinge tables</li>
+            <li>Simpler interface - instead of string handling, chained method calls</li>
+        </ul>
+	    <aside class="notes">
+	        We don't need database management, or at least it would
+	        be a pain to refactor to. We could use the query creation
+	        features, though.
+	    </aside>
+    </section>
+</section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
+<section>
+	<section>
+		Problems with ORMs
+	</section>
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
+	<section>
+		The famous
+		<a href="https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch">
+			object-relational impedance mismatch
+		</a>
+		<br/>
+        <br/>
+        <ul>
+        	<li>Data Types: ORMs map language semantics to database semantics. This is particularly a problem with references - hence relations being badly supported.</li>
+			<li>Validation: many ORMs perform validation client-side, rather than respecting the database's semantics</li>
+			<li>Transactions and data integrity: because of the problems with semantics and validation, sometimes the database's transactional model is ignored or re-implemented client side.</li>
+			<li>Optimization: object graphs, duplicate validation, in-memory aggregation, multiple queries to substitute for transactions.</li>
+        </ul>
+	</section>
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+	<section>
+		The more complex the use case, the harder it is to support.
+		<br/>
+        <br/>
+        <ul>
+	    	<li>Hinge tables with intermediate values are often supported, but confusing to configure</li>
+	    	<li>Complex aggregations and optimizations are often unsupported</li>
+	    </ul>
+        <aside class="notes">
+            A lot of work and math has gone into RDBMS to do very hard things. ORMs are less math-driven, and break a lot.
+        </aside>
+	</section>
+</section>
 
-    var nodes = document.querySelectorAll( selector );
+<section>
+	<section>
+		2 Kinds of ORMs
+		<aside class="notes">
+	        Apologize for over-explaining. I didn't know about any of this stuff two years ago.
+	    </aside>
+	</section>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+	<section>
+		Object-oriented ORMs modify the data model to be useful in OO code.
+    	This has more impedance mismatch problems, but is very powerful for
+    	common use cases
+	</section>
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
+	<section><pre><code data-trim data-noescape class="python">
+# There's been a murder! Get us some sketchy characters
+people = Person.objects.filter(
+    job__in=["dockworker", "cigar salesman"],
+    sketchy=True,
+).exclude(email='shtaab@gmail.com') # cuz that guy's ok
+
+# Implicate their cousins in the crime
+Person.objects.filter(
+    # Cousins
+    Q(father__siblings__child__in=people) |
+    Q(mother__siblings__child__in=people)
+).update(
+    last_implicated_in_crime=timezone.now(),
+    crime=Crime.objects.create(victim_name="Jimmy the Squid")
+)
+	</code></pre></section>
+
+	<section>
+		Query Building ORMs respect the data model while making it easier
+		to work with. This has fewer impedance mismatch problems, but isn't
+		as powerful.
+	</section>
+
+	<section>
+		<pre><code data-trim data-noescape class="php">
+// There's been a murder! Get us some sketchy characters
+$oQuery = new Query();
+$oQuery->select("id")
+	->from('people')
+	->where('job', 'IN', ["dockworker", "cigar salesman"])
+	->where('sketchy', '=', true)
+	->where('email', '!=' 'shtaab@gmail.com'); // Cuz that guy's ok
+
+$aPersonIds = $oSql->getColumn($oQuery);
+
+// Create a Crime to implicate them with
+$oQuery = new Query();
+$oQuery->insert('victim_name', "Jimmy the Squid")
+	->into('crimes');
+
+$iCrimeId = $oSql->getField($oQuery);
+
+// Implicate their cousins in the crime
+$oQuery = new Query();
+$oQuery->update('people', 'p')
+	->innerJoin('people', 'parents', 'ON (p.father_id = parents.id OR p.mother_id = parents.id)')
+	->innerJoin('people_hinge', 'p_hinge_parents', 'ON p_hinge_parents.from = parents.id')
+	->innerJoin('people', 'parents_sib', 'ON p_hinge_parents.to = parents_sib.id')
+	->innerJoin('people_hinge', 'p_hinge_parents_sib', 'ON p_hinge_parents_sib.from = parents_sib.id')
+	->innerJoin('people', 'cousins', 'ON p_hinge_parents_sib.to = cousins.id')
+	->set('last_implicated_in_crime', date())
+	->set('crime_id', $iCrimeId)
+	->where('cousins.id', 'IN', $aPersonIds);
+		</code></pre>
+
+		<aside class="notes">
+	        What's nice about all this is that it composes. See CC stats.
+	    </aside>
+	</section>
+
+	<section>
+		\Analyst\StringBuilder is not an ORM. It's a DSL builder
+	</section>
+</section>
+
+<section>
+	<section>
+		Domain-specific Languages
+	</section>
+
+	<section>
+		 A DSL is a language specialized to a particular application domain.
+		 <br/>
+		 <br/>
+		 <ul>
+		 	<li>CSS</li>
+            <li>Sass</li>
+		 	<li>Html</li>
+            <li>Jade</li>
+		 	<li>Http Query Strings</li>
+		 	<li>JSON</li>
+		 	<li>Makefiles</li>
+		 </ul>
+	</section>
+
+	<section>
+		MySQL is a database, including a transactional model, data semantics, error handling, and more. A SQL query though, is just a string-based DSL. Our current approach to MySQL has a number of steps - and several are just string building:
+		<br/>
+		<br/>
+		<ol>
+			<li>Cleanse inputs</li>
+			<li>Format inputs</li>
+			<li>Concatenate inputs into phrases</li>
+			<li>Concatenate phrases into queries</li>
+			<li>Execute the query</li>
+			<li>Handle errors</li>
+			<li>Format returned data</li>
+		</ol>
+	</section>
+
+	<section>
+		An ORM abstracts away the DSL. A DSL builder abstracts the building of the string DSL.
+	</section>
+
+	<section>
+		<pre><code data-trim data-noescape class="php">
+use \Analyst\StringBuilder as sb;
+
+// There's been a murder! Get us some sketchy characters
+$sWhere = sb\combine('AND',
+	sb\eq('job', ["dockworker", "cigar salesman"], sb\V_STR, sb\ENFORCED),
+	sb\eq('sketchy', true, sb\V_INT, sb\ENFORCED),
+	sb\ne('email', 'shtaab@gmail.com', sb\V_STR, sb\ENFORCED),
+);
+$aPersonIds = $oSql->getColumn("SELECT id FROM people $sWhere");
+
+// Create a Crime to implicate them with
+$sValues = sb\eq('victim_name', "Jimmy the Squid");
+$iCrimeId = $oSql->getField("INSERT INTO crimes (victim_name) VALUES $sValues");
+
+// Implicate their cousins in the crime
+$sSet = sb\eq('crime_id', $iCrimeId, sb\V_INT, sb\ENFORCED);
+$sWhere = sb\eq('cousins.id', $aPersonIds, sb\V_INT, sb\ENFORCED);
+$oSql->exec(
+	"UPDATE people AS p
+	INNER JOIN people AS parents ON (p.father_id = parents.id OR p.mother_id = parents.id)
+	INNER JOIN people_hinge as p_hinge_parents ON p_hinge_parents.from = parents.id
+	INNER JOIN people AS parents_sib ON p_hinge_parents.to = parents_sib.id
+	INNER JOIN people_hinge_sib as p_hinge_parents_sib ON p_hinge_parents_sib.from = parents_sib.id
+	INNER JOIN people AS cousins ON p_hinge_parents_sib.to = cousins.id
+	$sSet
+	$sWhere"
+);
+		</code></pre>
+	</section>
+
+	<section>
+		Benefits
+		<br/>
+		<br/>
+		<ul>
+			<li>No additional impedance mismatch</li>
+			<li>It can be used as much or as little as desired</li>
+			<li>Components can be wrapped in a function for reuse</li>
+			<li>It validates that inputs are either trusted or cleansed</li>
+			<li>Forces the user to handle edge cases with type and empty values</li>
+			<li>Is number agnostic</li>
+			<li>Provides shortcuts for formatting phrases</li>
+		</ul>
+	</section>
+
+	<section>
+		Value Proposition: this helps programmers be more careful about cleansing inputs and handling edge cases by making it convenient to cleanse, format, and concatenate inputs.
+	</section>
+</section>
+
+<section>
+	<section>
+		The Code
+		<aside class="notes">
+			<li>Wrapper</li>
+			<li>combine</li>
+			<li>Value fundamentals</li>
+			<li>Phrase</li>
+			<li>combining phrases</li>
+			<li>Configuration options for Value and Phrase</li>
+		</aside>
+	</section>
+
+	<section>
+		Usage Example
+	</section>
+
+	<section>
+		<pre><code data-trim data-noescape class="php">
+use \Analyst\StringBuilder as sb;
+
+// Untrusted data
+$sMinimumIncome = 30000;
+$sMaximumIncome = null;
+$aOccupations = [];
+$aSpecialNames = ["Vivaldi's Brother", 'Mud'];
+$aOrderByFields = ['Name', 'Income'];
+
+$sWhere = sb\combine("OR", [
+    sb\combine("AND", [
+        sb\gte('Income', $sMinimumIncome, sb\REQUIRED),
+        sb\lte('Income', $sMaximumIncome, sb\REQUIRED),
+        sb\eq('Occupation', $aOccupations, sb\OPTIONAL),
+    ], ['Wrap' => ['(', ')']]),
+    sb\eq('Name', $aSpecialNames, sb\V_STR, sb\ENFORCED)
+]);
+
+$sOrderBy = new sb\Value($aOrderByFields, sb\V_STR, sb\REQUIRED);
+
+echo "SELECT * FROM table
+    WHERE $sWhere
+    ORDER BY $sOrderBy";
+
+// SELECT * FROM table
+// WHERE (Income >= 30000
+//     AND Income <= 0)
+//     OR Name IN ('Vivaldi\'s Brother', 'Mud')
+// ORDER BY ('Name', 'Income')
+		</code></pre>
+	</section>
+
+	<section>
+		It supports other cleanse/quote/delimit based DSLs, too
+	</section>
+
+	<section>
+		Url Query Strings
+		<pre><code data-trim data-noescape class="php">
+function queryString($aParts){
+    return "?".sb\combine('&', $aParts, ['PadDelimiter' => false]);
 }
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
 
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+function queryStringPart($sKey, $sValue){
+    $aOpts = ['Cleanse' => 'urlencode', 'Quote' => null];
+    $aPhraseOpts = ['Whitespace' => ''];
+    return sb\eq($sKey, $sValue, sb\V_STR, sb\ENFORCED, $aOpts, $aPhraseOpts);
+}
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+echo queryString([
+    queryStringPart('Name', "Joseph Stalin's Back Hair"),
+    queryStringPart('Age', "115"),
+]);
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
+// ?Name=Joseph+Stalin%27s+Back+Hair&Age=115
+		</code></pre>
+	</section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+	<section>
+		Csv formatters
+		<pre><code data-trim data-noescape class="php">
+function toCsvRow($aRow, $aHeadings){
+    // Make sure the row is the right length based on headings
+    $aRow = array_pad($aRow, count($aHeadings), '');
+    return new sb\Value($aRow, sb\V_STR, sb\REQUIRED, [
+        'Quote' => ['"', '"'],
+        'PluralWrap' => [],
+        'Cleanse' => function($sValue){
+            return str_replace('"', '\\"', $sValue);
+        },
+    ]);
+}
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+function toCsv($aHeadings, $aData){
+    return sb\combine("\n", array_map(function($aRow) use($aHeadings){
+        return toCsvRow($aRow, $aHeadings);
+    }, array_merge([$aHeadings], $aData)), ['PadDelimiter' => false]);
+}
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+echo (string) toCsv(['Name', 'Beard Length'], [
+    ['Bjork', '0mm'],
+    ['Bob "Sylvester" Geronimo', '1mm'],
+]);
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+// "Name", "Beard Length"
+// "Bjork", "0mm"
+// "Bob \"Sylvester\" Geronimo", "1mm"
+		</code></pre>
+	</section>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
+	<section>
+		Go Forth!
+		<br/>
+		<br/>
+		<aside class="notes">
+			The code favors SQL as the primary supported abstraction, but if it seems valuable, I could put some more effort into making it DSL agnostic and extending it with a sql wrapper.
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
+			Review my pull request!
+		</aside>
+	</section>
+</section>
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+<!-- END PRESENTATION -->
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 			</div>
 
@@ -391,9 +463,8 @@ Reveal.addEventListener( 'customevent', function() {
 				progress: true,
 				history: true,
 				center: true,
-
+				// margin: -0.2,
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
 				// Optional reveal.js plugins
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
